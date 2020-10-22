@@ -11,17 +11,29 @@ Na dodatek wraz z zwiększeniem ilości punktów będzie zmniejszany czas na zeb
 Technologia użyta do tego projektu to C++ wraz z biblioteką sfml
 
 Do zrobienia:
+
 -okno gry
+
 -model postaci ( tekstury , poruszanie się postacią )
+
 -model celów  ( tekstury , randomowe rozmieszczanie )
+
 -model przeszkód ( tekstury, randomowe rozmieszczanie, poruszanie sie po wyznaczonej trajektori) 
+
 -interakcja gracz-przeszkoda
+
 -interakcja gracz-cel
+
 -interakcja gracz krawędzie
+
 -ilość żyć
+
 -stworzenie menu 
+
 -statystyki ostatnich gier
+
 -możliwość wyboru muzyki  
+
 -czas na zebranie celu 
 
  

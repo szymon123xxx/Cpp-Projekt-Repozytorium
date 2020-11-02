@@ -12,9 +12,9 @@ Technologia użyta do tego projektu to C++ wraz z biblioteką sfml
 
 Do zrobienia:
 
--okno gry
+-okno gry JEST
 
--model postaci ( tekstury , poruszanie się postacią )
+-model postaci ( tekstury , poruszanie się postacią ) JEST
 
 -model celów  ( tekstury , randomowe rozmieszczanie )
 
@@ -36,4 +36,5 @@ Do zrobienia:
 
 -czas na zebranie celu 
 
- 
+ # RaportI
+ Do tej pory utworzyłem okno gry oraz dodałem postać wraz z teksturami i możliwością poruszania się. Do następnego raportu planuję zrobić model celów oraz iterakcje gracz-przeszkoda.

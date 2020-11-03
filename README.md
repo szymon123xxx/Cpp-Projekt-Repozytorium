@@ -37,5 +37,5 @@ Do zrobienia:
 -czas na zebranie celu 
 
  # Raport I
- Do tej pory utworzyłem okno gry oraz dodałem postać wraz z teksturami i możliwością poruszania się. Do następnego raportu planuję zrobić model celów oraz iterakcje gracz-przeszkoda.
+ Do tej pory utworzyłem okno gry oraz dodałem postać wraz z teksturami i możliwością poruszania się. Do następnego raportu planuję zrobić model celów oraz iterakcje gracz-przeszkoda, gracz-cel, gracz-krawędzie.
 ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/poczatek.png)

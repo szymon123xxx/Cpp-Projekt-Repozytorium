@@ -8,5 +8,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <SFML/Window.hpp>
+#include <cstdlib>
+#include <random>
+#include <ctime>
+#include <vector>
 
 #endif // LIBRARIES_H

@@ -4,6 +4,8 @@
 
 #include "libraries.h"
 #include "player.h"
+#include "enemy.h"
+#include "wall.h"
 
 class Game{
 private:
@@ -11,8 +13,13 @@ private:
     sf::RenderWindow *window;
     sf::Event event;
     Player *player;
+    Enemy *enemy;
+    Wall *wall;
+
     void initWindow();
     void IPlayer();
+    void IEnemy();
+    void IWall();
 
 public:
     
@@ -21,7 +28,7 @@ public:
 
     
     void SFMLevents();
-    void playerMove(); //updating playing move
+    void playerMove(); //updating move
     void update();
     void render();
     void run();

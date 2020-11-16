@@ -2,9 +2,9 @@
 
 Player::Player()
 {
-    this->_Texture.loadFromFile("Player.png");
-    if (this->_Texture.loadFromFile("Player.png"))
-        std::cout<<"Img error";
+    this->_Texture.loadFromFile("postac.png");
+    if (this->_Texture.loadFromFile("postac.png"))
+        std::cout<<"Player loaded";
 
     this->_Sprite.setTexture(_Texture);
 

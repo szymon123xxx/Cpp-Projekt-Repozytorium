@@ -19,13 +19,16 @@ public:
 
     std::vector<sf::Sprite> walls;
 
-//    std::mt19937 generator;
-//
+    float position[36];
+    std::mt19937 generator;
+
 //    std::uniform_int_distribution<uint32_t> wall_x = std::uniform_int_distribution<uint32_t> (0, 800);
 //    std::uniform_int_distribution<uint32_t> wall_y = std::uniform_int_distribution<uint32_t> (0, 800);
 
 
     void walls2(sf::RenderWindow* window);
+    void LevelMedium(sf::RenderWindow* window);
+    void LevelHard(sf::RenderWindow* window);
 };
 
 #endif //_WALL_H

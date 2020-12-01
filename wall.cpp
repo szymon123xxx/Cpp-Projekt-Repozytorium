@@ -17,28 +17,54 @@ Wall::Wall(){
     this->wall_Sprite_vertical.setTexture(wall_Texture_vertical);
     this->wall_Sprite_horizontal.setTexture(wall_Texture_horizontal);
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 9; i++) {
         this->walls.push_back(wall_Sprite_horizontal);
         this->walls.push_back(wall_Sprite_vertical);
     }
+
+    generator.seed(std::time(0));
+    std::uniform_real_distribution<float> random(100, 800);
+    for(int i=0; i < 36; i++)
+    {
+        this->position[i] = random(this->generator);
+    }
 }
+
 Wall::~Wall(){}
 
 void Wall::walls2(sf::RenderWindow* window){
-
-//    generator.seed(std::time(0));
-
-//    this->walls[0].setPosition(sf::Vector2f(this->wall_x(this->generator), this->wall_y(this->generator)));
-//    this->walls[1].setPosition(sf::Vector2f(this->wall_x(this->generator), this->wall_y(this->generator)));
-
-    this->walls[0].setPosition(sf::Vector2f(100, 100 ));
-    this->walls[1].setPosition(sf::Vector2f(200, 500 ));
-    this->walls[2].setPosition(sf::Vector2f(600, 300 ));
-    this->walls[3].setPosition(sf::Vector2f(400, 400 ));
-    this->walls[4].setPosition(sf::Vector2f(500, 500 ));
-    this->walls[5].setPosition(sf::Vector2f(800, 700 ));
+    int variable = 0;
+    for(int i=0; i < 6; i++) {
+        this->walls[i].setPosition(sf::Vector2f(position[variable], position[variable+1]));
+        variable+=2;
+    }
 
     for (int i = 0; i < 6; i++) {
+        window->draw(this->walls[i]);
+    }
+}
+
+void Wall::LevelMedium(sf::RenderWindow* window){
+    int variable2 = 0;
+    for(int i=0; i < 12; i++) {
+        std::cout << variable2 << std::endl ;
+        this->walls[i].setPosition(sf::Vector2f(position[variable2], position[variable2+1]));
+        variable2+=2;
+    }
+
+    for (int i = 0; i < 12; i++) {
+        window->draw(this->walls[i]);
+    }
+}
+
+void Wall::LevelHard(sf::RenderWindow* window){
+    int variable3 = 0;
+    for(int i=0; i < 18; i++) {
+        this->walls[i].setPosition(sf::Vector2f(position[variable3], position[variable3+1]));
+        variable3+=2;
+    }
+
+    for (int i = 0; i < 18; i++) {
         window->draw(this->walls[i]);
     }
 }

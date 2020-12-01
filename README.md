@@ -16,19 +16,19 @@ Do zrobienia:
 
 -model postaci ( tekstury , poruszanie się postacią ) JEST
 
--model celów  ( tekstury , randomowe rozmieszczanie )
+-model celów  ( tekstury , randomowe rozmieszczanie ) JEST
 
--model przeszkód ( tekstury, randomowe rozmieszczanie, poruszanie sie po wyznaczonej trajektori) 
+-model przeszkód ( tekstury, randomowe rozmieszczanie, poruszanie sie po wyznaczonej trajektori(nie ma) )  JEST
 
--interakcja gracz-przeszkoda
+-interakcja gracz-przeszkoda 
 
--interakcja gracz-cel
+-interakcja gracz-cel JEST
 
--interakcja gracz krawędzie
+-interakcja gracz krawędzie JEST
 
 -ilość żyć
 
--stworzenie menu 
+-stworzenie menu JEST
 
 -statystyki ostatnich gier
 
@@ -44,3 +44,16 @@ Do zrobienia:
  Do tej pory utowrzyłem model celów, przeszkód oraz dodałem background planszy. Między postać-cel, a zarówno przeszkody-cel zostały dodane interakcje po których cel zmienia swoje położenie oraz interakcje postci z krawędziami planszy. 
  Do następnego raportu planuje zrobić menu w którym będą znajdowały się 3 poziomy trudności , licznik zdobytych punktów oraz wstępnie odtwarzanie melodi podczas gry. 
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport_2.png)
+ 
+ # Raport III
+ Do tej pory utowrzyłem menu w którym mamy możliwość wyboru poziomów. Każdy poziom różni się ilością wygenerowanych przeszkód. Współrzędne generowane są za każdym razme losowo z zadanego przedziału. Wprowadziłem także licznik punktów. Niestety muzyki nie wprowadziłem bo wyżej wymienione rzeczy okazały się bardzo czasochłonne. Do następnego raportu mam zamiar zrobic metode obsługującą zderzenia postaci z przeszkodami oraz odtwarzanie muzyki w tle. Na dodatek mam zamiar dodać licznik czasu na zebranie celu oraz utrudnienie poziomów poprzez zwiększenie prędkości na poszczególnych levelach.
+ Menu
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3menu1.png)
+ Menu z poziomami
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3menu2.png)
+ Poziom easy
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3easy.png)
+  Poziom medium
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3medium.png)
+  Poziom hard
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3hard.png)

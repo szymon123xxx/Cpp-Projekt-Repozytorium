@@ -39,3 +39,8 @@ Do zrobienia:
  # Raport I
  Do tej pory utworzyłem okno gry oraz dodałem postać wraz z teksturami i możliwością poruszania się. Do następnego raportu planuję zrobić model celów oraz iterakcje gracz-przeszkoda, gracz-cel, gracz-krawędzie.
 ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/poczatek.png)
+
+ # Raport II
+ Do tej pory utowrzyłem model celów, przeszkód oraz dodałem background planszy. Między postać-cel, a zarówno przeszkody-cel zostały dodane interakcje po których cel zmienia swoje położenie oraz interakcje postci z krawędziami planszy. 
+ Do następnego raportu planuje zrobić menu w którym będą znajdowały się 3 poziomy trudności , licznik zdobytych punktów oraz wstępnie odtwarzanie melodi podczas gry. 
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport_2.png)

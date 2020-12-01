@@ -46,7 +46,8 @@ Do zrobienia:
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport_2.png)
  
  # Raport III
- Do tej pory utowrzyłem menu w którym mamy możliwość wyboru poziomów. Każdy poziom różni się ilością wygenerowanych przeszkód. Współrzędne generowane są za każdym razme losowo z zadanego przedziału. Wprowadziłem także licznik punktów. Niestety muzyki nie wprowadziłem bo wyżej wymienione rzeczy okazały się bardzo czasochłonne. Do następnego raportu mam zamiar zrobic metode obsługującą zderzenia postaci z przeszkodami oraz odtwarzanie muzyki w tle. Na dodatek mam zamiar dodać licznik czasu na zebranie celu oraz utrudnienie poziomów poprzez zwiększenie prędkości na poszczególnych levelach.
+ Do tej pory utowrzyłem menu w którym mamy możliwość wyboru poziomów. Każdy poziom różni się ilością wygenerowanych przeszkód. Współrzędne generowane są za każdym razme losowo z zadanego przedziału. Wprowadziłem także licznik punktów. Niestety muzyki nie wprowadziłem bo wyżej wymienione rzeczy okazały się bardzo czasochłonne. Do następnego raportu mam zamiar zrobic metode obsługującą zderzenia postaci z przeszkodami oraz odtwarzanie muzyki w tle. Na dodatek mam zamiar dodać licznik czasu na zebranie celu, ilość żyć oraz utrudnienie poziomów poprzez zwiększenie prędkości na poszczególnych levelach.
+ 
  Menu
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3menu1.png)
  Menu z poziomami

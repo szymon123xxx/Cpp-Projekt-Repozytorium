@@ -65,5 +65,5 @@ Do zrobienia:
  
  Muzyka
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport4.png)
- Czas 
+ Czas i życie
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport4_2.png)

@@ -20,21 +20,21 @@ Do zrobienia:
 
 -model przeszkód ( tekstury, randomowe rozmieszczanie, poruszanie sie po wyznaczonej trajektori(nie ma) )  JEST
 
--interakcja gracz-przeszkoda 
+-interakcja gracz-przeszkoda JEST
 
 -interakcja gracz-cel JEST
 
 -interakcja gracz krawędzie JEST
 
--ilość żyć
+-ilość żyć JEST
 
 -stworzenie menu JEST
 
--statystyki ostatnich gier
+-statystyki ostatnich gier 
 
--możliwość wyboru muzyki  
+-możliwość wyboru muzyki  JEST
 
--czas na zebranie celu 
+-czas na zebranie celu JEST
 
  # Raport I
  Do tej pory utworzyłem okno gry oraz dodałem postać wraz z teksturami i możliwością poruszania się. Do następnego raportu planuję zrobić model celów oraz iterakcje gracz-przeszkoda, gracz-cel, gracz-krawędzie.
@@ -48,6 +48,8 @@ Do zrobienia:
  # Raport III
  Do tej pory utowrzyłem menu w którym mamy możliwość wyboru poziomów. Każdy poziom różni się ilością wygenerowanych przeszkód. Współrzędne generowane są za każdym razme losowo z zadanego przedziału. Wprowadziłem także licznik punktów. Niestety muzyki nie wprowadziłem bo wyżej wymienione rzeczy okazały się bardzo czasochłonne. Do następnego raportu mam zamiar zrobic metode obsługującą zderzenia postaci z przeszkodami oraz odtwarzanie muzyki w tle. Na dodatek mam zamiar dodać licznik czasu na zebranie celu, ilość żyć oraz utrudnienie poziomów poprzez zwiększenie prędkości na poszczególnych levelach.
  
+ # Raport IV
+ Do tej pory utworzyłem menu z melodiami. Dodałem także zderzenia postaci z przeszkodami , licznik czasu na zebranie celu oraz ilość żyć postaci wraz z utrudnieniem poziomów poprzez zwiększenie prędkości postaci na poszczególnych levelach.
  Menu
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3menu1.png)
  Menu z poziomami

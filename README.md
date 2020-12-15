@@ -61,6 +61,8 @@ Do zrobienia:
  
  # Raport IV
  Do tej pory utworzyłem menu z melodiami. Dodałem także zderzenia postaci z przeszkodami , licznik czasu na zebranie celu oraz ilość żyć postaci wraz z utrudnieniem poziomów poprzez zwiększenie prędkości postaci na poszczególnych levelach.
+ 
+ 
  Muzyka
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport4.png)
  Czas 

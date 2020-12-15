@@ -48,8 +48,6 @@ Do zrobienia:
  # Raport III
  Do tej pory utowrzyłem menu w którym mamy możliwość wyboru poziomów. Każdy poziom różni się ilością wygenerowanych przeszkód. Współrzędne generowane są za każdym razme losowo z zadanego przedziału. Wprowadziłem także licznik punktów. Niestety muzyki nie wprowadziłem bo wyżej wymienione rzeczy okazały się bardzo czasochłonne. Do następnego raportu mam zamiar zrobic metode obsługującą zderzenia postaci z przeszkodami oraz odtwarzanie muzyki w tle. Na dodatek mam zamiar dodać licznik czasu na zebranie celu, ilość żyć oraz utrudnienie poziomów poprzez zwiększenie prędkości na poszczególnych levelach.
  
- # Raport IV
- Do tej pory utworzyłem menu z melodiami. Dodałem także zderzenia postaci z przeszkodami , licznik czasu na zebranie celu oraz ilość żyć postaci wraz z utrudnieniem poziomów poprzez zwiększenie prędkości postaci na poszczególnych levelach.
  Menu
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3menu1.png)
  Menu z poziomami
@@ -60,3 +58,10 @@ Do zrobienia:
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3medium.png)
   Poziom hard
  ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport3hard.png)
+ 
+ # Raport IV
+ Do tej pory utworzyłem menu z melodiami. Dodałem także zderzenia postaci z przeszkodami , licznik czasu na zebranie celu oraz ilość żyć postaci wraz z utrudnieniem poziomów poprzez zwiększenie prędkości postaci na poszczególnych levelach.
+ Muzyka
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport4.png)
+ Czas 
+ ![image](https://github.com/szymon123xxx/Cpp-Projekt-Repozytorium/blob/main/zdj%C4%99cia/raport4_2.png)

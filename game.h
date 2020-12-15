@@ -9,6 +9,7 @@
 #include "menu.h"
 #include "scoreAndGraph.h"
 #include "menuLevels.h"
+#include "menuMusic.h"
 
 class Game{
 private:
@@ -21,6 +22,7 @@ private:
     Menu *menu;
     ScoreAndGraph *scoreAndGraph;
     MenuLevels *menuLevels;
+    MenuMusic *menuMusic;
 
     void initWindow();
     void IPlayer();
@@ -29,6 +31,7 @@ private:
     void IMenu();
     void IscoreAndGraph();
     void IMenuLevels();
+    void IMenuMusic();
 
 public:
     
@@ -39,6 +42,7 @@ public:
     void SFMLevents();
     void SFMLeventsMenu();
     void SFMLeventsLevelMenu();
+    void SFMLeventsMusicMenu();
     void playerMove(); //updating move
     void update();
     void render();
@@ -47,6 +51,8 @@ public:
     void menuRun();
     void menuLevelRun();
     void renderLevelMenu();
+    void renderMusicMenu();
+    void menuMusicRun();
 
 };
 

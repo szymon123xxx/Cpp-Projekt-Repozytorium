@@ -12,5 +12,8 @@
 #include <random>
 #include <ctime>
 #include <vector>
+#include <time.h>
+#include <sstream>
+#include <ctime>
 
 #endif // LIBRARIES_H

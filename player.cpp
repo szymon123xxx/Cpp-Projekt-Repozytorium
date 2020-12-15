@@ -8,12 +8,14 @@ Player::Player()
 
     this->_Sprite.setTexture(_Texture);
 
-    float x = 500;
-    float y = 500;
+    float x = 50;
+    float y = 50;
 
     this->_Sprite.setPosition(x, y);
     
     this->_Position = {x,y};
+
+    this->Speed = {0.f, 0.f};
 }
 
 
@@ -23,4 +25,6 @@ void Player::moving(sf::Vector2f _Position ){
 
     this->_Sprite.setPosition(this->_Position );
 }
+
+
 

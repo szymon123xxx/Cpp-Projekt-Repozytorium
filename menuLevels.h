@@ -14,7 +14,6 @@ public:
     void menu_level_draw(sf::RenderWindow *window);
     int GetPressedItem() {return selectedItemIndex;}
 
-
     int selectedItemIndex;
     sf::Font font;
     sf::Text menu[MAX_NUMBER_OF_ITEMSS];

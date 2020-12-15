@@ -13,17 +13,25 @@ public:
 
     sf::Font font;
     sf::Text score;
+    sf::Text time;
 
     int score_int;
+    int count_HP;
     std::string score_text;
     sf::Texture Score_Texture;
     sf::Sprite Score_Sprite;
 
     sf::Texture HP_Red_Texture;
-    sf::Sprite HP_Red_Sprite;
+    sf::Sprite HP_Red_Sprite1;
+    sf::Sprite HP_Red_Sprite2;
+    sf::Sprite HP_Red_Sprite3;
 
     sf::Texture HP_Black_Texture;
     sf::Sprite HP_Black_Sprite;
+
+    sf::Clock clock;
+    int countdown ;
+    sf::Text timerText;
 
 };
 

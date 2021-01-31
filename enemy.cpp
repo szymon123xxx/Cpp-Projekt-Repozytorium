@@ -3,8 +3,8 @@
 Enemy::Enemy()
 {
     this->Enemy_Texture.loadFromFile("player.png");
-    if (this->Enemy_Texture.loadFromFile("player.png"))
-        std::cout<<"Enemy loaded";
+//    if (this->Enemy_Texture.loadFromFile("player.png"))
+//        std::cout<<"Enemy loaded";
 
     this->Enemy_Sprite.setTexture(Enemy_Texture);
 

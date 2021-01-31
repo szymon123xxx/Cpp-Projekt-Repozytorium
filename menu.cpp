@@ -23,9 +23,16 @@ Menu::Menu(float width, float height) {
 
     menu[2].setFont(font);
     menu[2].setFillColor(sf::Color::White);
-    menu[2].setString("Exit");
+    menu[2].setString("Scores");
     menu[2].setCharacterSize(50);
     menu[2].setPosition(sf::Vector2f(width/2, height/(MAX_NUMBER_OF_ITEMS + 1) * 3));
+
+
+    menu[3].setFont(font);
+    menu[3].setFillColor(sf::Color::White);
+    menu[3].setString("Exit");
+    menu[3].setCharacterSize(50);
+    menu[3].setPosition(sf::Vector2f(width/2, height/(MAX_NUMBER_OF_ITEMS + 1) * 4));
 
     selectedItemIndex = 0;
 }

@@ -13,6 +13,7 @@ public:
 
     sf::Font font;
     sf::Text score;
+    sf::Text score2;
     sf::Text time;
 
     int score_int;
@@ -32,6 +33,8 @@ public:
     sf::Clock clock;
     int countdown ;
     sf::Text timerText;
+
+
 
 };
 

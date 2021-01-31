@@ -1,5 +1,5 @@
 
-OBJS = main.o game.o player.o enemy.o wall.o menu.o scoreAndGraph.o menuLevels.o menuMusic.o
+OBJS = main.o game.o player.o enemy.o wall.o menu.o scoreAndGraph.o menuLevels.o menuMusic.o menuListScore.o
 CXX = g++
 CXXFLAGS = -Wall -std=c++17
 LDLIBS = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
@@ -22,6 +22,8 @@ $(OBJS): scoreAndGraph.h
 $(OBJS): menuLevels.h
 
 $(OBJS): menuMusic.h
+
+$(OBJS): menuListScore.h
 
 clean:
 	$(RM) game $(OBJS)

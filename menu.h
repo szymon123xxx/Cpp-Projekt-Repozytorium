@@ -3,7 +3,7 @@
 #define CPP_PROJEKT_REPOZYTORIUM_MAIN_MENU_H
 
 #include "libraries.h"
-#define MAX_NUMBER_OF_ITEMS 3
+#define MAX_NUMBER_OF_ITEMS 4
 
 class Menu{
 public:

@@ -2,16 +2,16 @@
 
 Wall::Wall(){
     this->back_Texture.loadFromFile("tlo.png");
-    if (this->back_Texture.loadFromFile("tlo.png"))
-        std::cout<<"background loaded";
+//    if (this->back_Texture.loadFromFile("tlo.png"))
+//        std::cout<<"background loaded";
 
     this->wall_Texture_horizontal.loadFromFile("sciana4.png");
-    if (this->wall_Texture_horizontal.loadFromFile("sciana4.png"))
-        std::cout<<"horizontal wall loaded";
+//    if (this->wall_Texture_horizontal.loadFromFile("sciana4.png"))
+//        std::cout<<"horizontal wall loaded";
 
     this->wall_Texture_vertical.loadFromFile("sciana5.png");
-    if (this->wall_Texture_vertical.loadFromFile("sciana5.png"))
-        std::cout<<"vertical wall loaded";
+//    if (this->wall_Texture_vertical.loadFromFile("sciana5.png"))
+//        std::cout<<"vertical wall loaded";
 
     this->back_Sprite.setTexture(back_Texture);
     this->wall_Sprite_vertical.setTexture(wall_Texture_vertical);

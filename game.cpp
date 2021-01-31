@@ -10,7 +10,7 @@ void Game::initWindow() {
 
     int frame = 60;
 
-    this->window = new sf::RenderWindow(window_mode, "OP_GAME");
+    this->window = new sf::RenderWindow(window_mode, "The Virus");
     this->window->setFramerateLimit(frame);
 }
 
@@ -50,6 +50,9 @@ void Game::SFMLeventsMenu(){
                                 menuMusicRun() ;
                                 break;
                             case 2:
+                                menuListScoreRun();
+                                break;
+                            case 3:
                                 this->window->close();
                         }
                 }
@@ -147,6 +150,38 @@ void Game::SFMLeventsMusicMenu(){
     }
 }
 
+void Game::SFMLeventsListScore(){
+    while (this->window->pollEvent(this->event)){
+
+        switch (event.type){
+
+            case sf::Event::KeyReleased:
+                switch (event.key.code){
+                    case sf::Keyboard::W:
+                        menuListScore->MoveUp();
+                        break;
+
+                    case sf::Keyboard::S:
+                        menuListScore->MoveDown();
+                        break;
+
+                    case sf::Keyboard::Return:
+                        switch (menuListScore->GetPressedItem()){
+                            case 0:
+                                menuRun();
+                        }
+                }
+        }
+        if (this->event.type == sf::Event::Closed)
+            this->window->close();
+
+//        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)){
+//            this->window->close();
+//        }
+    }
+}
+
+
 
 void Game::IPlayer(){
     this->player = new Player();
@@ -177,17 +212,49 @@ void Game::IMenuMusic() {
     this->menuMusic = new MenuMusic(this->window->getSize().x, this->window->getSize().y);
 }
 
+void Game::IMenuListScore() {
+    this->menuListScore = new MenuListScore();
+}
+
 void Game::playerMove(){
     // generowanie zakresu dla obiektu
     std::mt19937 generator;
     generator.seed(std::time(0));
-    std::uniform_int_distribution<uint32_t> dice(150, 1050);
+    std::uniform_int_distribution<uint32_t> dice(150, 1000);
     std::uniform_int_distribution<uint32_t> dice2(150, 850);
+    int scores;
+
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)){
         menuRun();
     }
     if (this->scoreAndGraph->count_HP == 0){
+
+        scores = scoreAndGraph->score_int;
+        std::ofstream file;
+        file.open ("scoresfile.txt", std::ios::app);
+        file << scores << std::endl;
+        file.close();
+
+
+        std::fstream myfiles("scoresfile.txt", std::ios_base::in);
+        std::vector<int> array;
+        int x;
+        while (myfiles >> x)
+            array.insert(array.begin() , x);
+
+        for (unsigned i = 0; i < array.size(); i++)
+            std::cout << array[i] <<' ';
+
+//        renderListScoreRun();
+
+        this->menuListScore->draw(this->window->getSize().x, this->window->getSize().y, array);
+
+//
+//        this->menuListScore->menu_ListScore_draw(this->window);
+//        renderListScoreRun();
+//        menuListScoreRun();
         menuRun();
+
     }
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
@@ -255,6 +322,7 @@ void Game::playerMove(){
 
     }}
 
+
     for (unsigned i = 0; i < this->wall->walls.size(); i++ ){
         if (this->enemy->Enemy_Sprite.getGlobalBounds().intersects(this->wall->walls[i].getGlobalBounds()) ) {
             this->enemy->Enemy_Sprite.setPosition(dice(generator),dice2(generator)); // kolizja sciany - cel
@@ -263,7 +331,7 @@ void Game::playerMove(){
     for (unsigned i = 0; i < this->wall->walls.size(); i++ ){
         if (this->player->_Sprite.getGlobalBounds().intersects(this->wall->walls[i].getGlobalBounds())) {
             this->menuMusic->hitWall.play();
-            this->player->moving({-(this->player->_Position.x) + 80, -(this->player->_Position.y)+ 80});
+            this->player->moving({-(this->player->_Position.x) + 350, -(this->player->_Position.y)+ 80});
             this->scoreAndGraph->countdown = 8;
             this->scoreAndGraph->count_HP -= 1;
         }
@@ -273,6 +341,10 @@ void Game::playerMove(){
 //            this->scoreAndGraph->countdown = 8;
 //            this->scoreAndGraph->count_HP -= 1;
 //        }
+
+//score
+
+
 
     }
 }
@@ -317,7 +389,7 @@ void Game::render(){
 
     if (this->scoreAndGraph->countdown == 0 ) {
         this->menuMusic->hitWall.play();
-        this->player->moving({-(this->player->_Position.x) + 80, -(this->player->_Position.y)+ 80});
+        this->player->moving({-(this->player->_Position.x) + 350, -(this->player->_Position.y)+ 80});
         this->scoreAndGraph->countdown = 8;
         this->scoreAndGraph->count_HP -= 1;
     }
@@ -360,6 +432,21 @@ void Game::renderMusicMenu() {
     this->window->display();
 }
 
+void Game::renderListScoreRun() {
+    this->window->clear();
+
+    this->window->draw(this->menuListScore->Menu_Sprite);
+
+    std::string score_text = "Last score: ";
+    this->scoreAndGraph->score2.setString(score_text);
+    this->window->draw(this->scoreAndGraph->score2);
+
+    this->menuListScore->menu_ListScore_draw(this->window);
+
+
+    this->window->display();
+}
+
 void Game::menuRun(){
     while ( this->window->isOpen())
     {
@@ -384,10 +471,19 @@ void Game::menuMusicRun(){
     }
 }
 
+void Game::menuListScoreRun() {
+    while ( this->window->isOpen())
+    {
+        this->SFMLeventsListScore();
+        this->renderListScoreRun();
+    }
+}
+
 
 void Game::run(){
     while ( this->window->isOpen())
     {
+
         this->update();
         this->render();
 
@@ -403,6 +499,7 @@ Game::Game(){
     this->IscoreAndGraph();
     this->IMenuLevels();
     this->IMenuMusic();
+    this->IMenuListScore();
 }
 
 Game::~Game(){

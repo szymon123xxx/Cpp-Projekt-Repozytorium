@@ -3,13 +3,13 @@
 Player::Player()
 {
     this->_Texture.loadFromFile("postac.png");
-    if (this->_Texture.loadFromFile("postac.png"))
-        std::cout<<"Player loaded";
+//    if (this->_Texture.loadFromFile("postac.png"))
+//      std::cout<<"Player loaded";
 
     this->_Sprite.setTexture(_Texture);
 
-    float x = 50;
-    float y = 50;
+    float x = 350;
+    float y = 20;
 
     this->_Sprite.setPosition(x, y);
     
